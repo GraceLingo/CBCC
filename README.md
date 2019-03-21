@@ -18,8 +18,8 @@ Open XAMPP and start Apache and MySQL
 
 - To clone repository
 ```bash
-git clone git@github.com:bluedeveloper1/CBCC.git
-cd cbcc
+git clone git@github.com:bluedeveloper1/cbc.git
+cd cbc
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -31,7 +31,7 @@ Open notepad (Run as administrator). File > Open.
 Go to C:\Windows\System32\drivers\etc\hosts
 Put in the last line
 	127.0.0.1 localhost
-	127.0.0.1 cbcc.me
+	127.0.0.1 cbc.me
 Save.
 Go to C:\xampp\apache\conf\extra\httpd-vhosts.conf and add the ff in the last line.
 	<VirtualHost *:80>
@@ -40,9 +40,9 @@ Go to C:\xampp\apache\conf\extra\httpd-vhosts.conf and add the ff in the last li
 	</VirtualHost>
 
 	<VirtualHost *:80>
-		DocumentRoot "C:/xampp/htdocs/cbcc/public"
-		ServerName cbcc.me
-		<Directory "C:/xampp/htdocs/cbcc/public">
+		DocumentRoot "C:/xampp/htdocs/cbc/public"
+		ServerName cbc.me
+		<Directory "C:/xampp/htdocs/cbc/public">
 			Order allow,deny
 			Allow from all
 		</Directory>
@@ -53,7 +53,7 @@ Save.
 - To create table in database
 ```bash
 Go to http://localhost/phpmyadmin/
-Create database (Click Databases)named cbcc
+Create database (Click Databases)named cbc
 ```
 
 Go to GIT
@@ -65,7 +65,7 @@ Go to GIT
 - To start the app
 ```bash
 Open browser (preferably Chrome).
-Go to cbcc.me
+Go to cbc.me
 Go to Register
 Register
 You will be directed to main page.
